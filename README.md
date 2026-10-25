@@ -3,7 +3,7 @@
 # Ratchet&Jak — beta experimental
 
 Un crossover no oficial para PC, en desarrollo. **Esta descarga genera la beta
-V19 alpha26. No es un juego terminado ni contiene las dos campañas completas.**
+V19 alpha27. No es un juego terminado ni contiene las dos campañas completas.**
 
 ## Progreso del proyecto
 
@@ -16,9 +16,9 @@ en el generador. Ambas campañas completas siguen pendientes.
 
 ## Descargar
 
-**[Descargar el generador EXE para Windows x64](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/download/v0.2.0-beta.1/RatchetJak-Generador-Beta-0.2.0.exe)**
+**[Descargar el generador EXE para Windows x64](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/download/v0.2.1-beta.1/RatchetJak-Generador-Beta-0.2.1.exe)**
 
-[Release, cambios y suma SHA-256](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/tag/v0.2.0-beta.1)
+[Release, cambios y suma SHA-256](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/tag/v0.2.1-beta.1)
 
 El generador incluye el motor probado y las herramientas de conversión. No hace
 falta instalar Rust, Python, OpenGOAL ni un SDK de desarrollo. Los datos comerciales
@@ -27,7 +27,7 @@ ni se incluyen ISO, modelos, texturas, música o partidas comerciales en el paqu
 
 ## Cómo generar la beta
 
-1. Descarga y abre `RatchetJak-Generador-Beta-0.2.0.exe` en Windows x64 con .NET
+1. Descarga y abre `RatchetJak-Generador-Beta-0.2.1.exe` en Windows x64 con .NET
    Framework 4.8. La aplicación utiliza tu usuario normal.
 2. Elige el idioma: **español, inglés, francés, alemán o italiano**. Los menús del
    juego se preconfiguran con esa elección y luego pueden cambiarse en Opciones.
@@ -45,7 +45,9 @@ El juego arranca en **fullscreen sin bordes**, con la **resolución física del
 monitor** y escala interna del 100%. La instalación inicial conserva el idioma
 elegido; el lanzador no lo fuerza después de cambiarlo en Opciones.
 
-![Generador con selector de cinco idiomas](assets/instalador.png)
+![Diseño del generador con cinco idiomas, captura 0.2.0](assets/instalador.png)
+
+La imagen del instalador corresponde a 0.2.0; 0.2.1 mantiene el diseño y los cinco idiomas.
 
 Si ya existe un EXE con ese nombre, se crea otro con un número, sin sustituirlo.
 El generador tampoco actualiza ni borra instalaciones o partidas existentes.
@@ -72,7 +74,14 @@ animaciones y recursos necesarios para esta beta.
 
 ## Capturas reales
 
-Estas imágenes muestran el cliente nativo generado a partir de las dos ISO durante
+La pantalla START corresponde a **alpha27 / 0.2.1**: muestra una única indicación
+según el dispositivo activo y la asignación del botón. Ejemplos: **ENTER** con
+teclado, **OPTIONS** en DualSense/PS4, **START** en PS3/Xbox 360, **MENU** en Xbox
+One/Series y **+** en Switch. El botón reasignado también se refleja en el texto.
+
+Las capturas de menú y cooperativo se conservan de alpha26 / 0.2.0 y no se
+presentan como ensayos nuevos de alpha27. Estas imágenes muestran el cliente
+nativo generado a partir de las dos ISO durante
 pruebas en segundo plano con entradas programadas. Son capturas de 3840×2160;
 cada mitad vertical de cooperativo mide 1920×2160. No son maquetas ni pruebas con dos mandos físicos.
 
@@ -128,7 +137,7 @@ El generador conserva `generated_not_gameplay_verified` en su manifest: generar
 archivos correctamente no demuestra que una campaña pueda completarse.
 
 El código del generador está en `src/`. El motor de esta release está fijado al
-SHA-256 `f5d483623992f0d63760bc6e0f1334668f01a03eb706021f17fc4046ec125e1e`.
+SHA-256 `8ca7e846bbeb0edaaddba651396b331fe031d6f329c7673b99b7778ee32ee52d`.
 No se publica el árbol privado con recursos extraídos o fuentes de juego descompiladas.
 
 Basado en [ReRAC](https://github.com/re-rac/rerac), las modificaciones de

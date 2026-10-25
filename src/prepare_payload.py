@@ -29,9 +29,9 @@ def main():
     code=Path(__file__).resolve().parent
     def cp(source,name):
         to=out/name;to.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,to)
-    expected='f5d483623992f0d63760bc6e0f1334668f01a03eb706021f17fc4046ec125e1e'
+    expected='8ca7e846bbeb0edaaddba651396b331fe031d6f329c7673b99b7778ee32ee52d'
     if sha(a.runtime)!=expected:
-        raise ValueError('This release is pinned to tested native beta26-languages')
+        raise ValueError('This release is pinned to tested native beta27-start')
     cp(a.runtime,'runtime/RatchetJakCrossover.exe')
     cp(src/'runtime/deps/sdl3-3.4.18/SDL3.dll','runtime/deps/sdl3-3.4.18/SDL3.dll')
     copy_tree(src/'crates/rc-engine/assets/shaders',out/'runtime/assets/shaders')
@@ -83,7 +83,7 @@ def main():
     forbidden=[f for f in files if f.lower().endswith(('.iso','.glb','.gltf','.rgba','.sbk','.vag','.dgo','.cgo'))]
     if forbidden:
         raise ValueError('Retail/converted data in payload: '+str(forbidden))
-    manifest=dict(schema=1,beta='V19 alpha26 experimental',runtime_sha256=expected,files=files)
+    manifest=dict(schema=1,beta='V19 alpha27 experimental',runtime_sha256=expected,files=files)
     (out/'payload-manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     archive=out.parent/(out.name+'.zip')
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

@@ -504,6 +504,13 @@
       "de": "Aus",
       "es": "Desactivado",
       "it": "Disattivo"
+    },
+    "PULSA": {
+      "en": "PRESS",
+      "fr": "APPUYER",
+      "de": "DRUECKE",
+      "es": "PULSA",
+      "it": "PREMI"
     }
   },
   "setup": {

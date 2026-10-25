@@ -1,4 +1,27 @@
-# Verificación de 0.2.0-beta.1
+# Verificación
+
+## 0.2.1-beta.1 — START contextual / alpha27
+
+La pantalla START muestra **una sola línea**. La familia de botones efectiva,
+el dispositivo activo y la asignación física de Start determinan la indicación.
+El teclado conserva ENTER como acceso de inicio. Al cambiar el dispositivo,
+la indicación sigue el mismo enrutamiento usado por el menú.
+
+- 169 pruebas del motor superadas; 2 ignoradas. La prueba nueva cubre familias,
+  retorno a teclado y reasignación física del botón de inicio.
+- Nueva generación completa desde las dos ISO: exit 0, 282.3 s,
+  1170 referencias GLTF válidas y nuevo EXE del escritorio.
+- START nativo de la instalación recién generada: frame 3200 exacto, exit 0,
+  captura oculta de 3840×2160 revisada; únicamente PULSA ENTER.
+- El cambio de texto según mando se verifica con pruebas sintéticas del código;
+  no se atribuye una nueva pulsación física de DualSense a esta actualización.
+- El motor conserva el código de campaña de alpha26; las pruebas de núcleo,
+  cooperativo, menús francés/español y agua/planeo anteriores figuran abajo como
+  referencia y no se presentan como nuevas ejecuciones de alpha27.
+- Motor: `8ca7e846bbeb0edaaddba651396b331fe031d6f329c7673b99b7778ee32ee52d`
+- Generador: `e8307a052d3b3cf0975b74d745d13125222cd8bb1448eb9f094524412ab94cf5`
+
+## Referencia histórica: 0.2.0-beta.1 / alpha26
 
 Fecha: **25 de octubre de 2026**. Motor **V19 alpha26 experimental**, basado en
 la jugabilidad verificada de alpha24, con traducciones del menú y resolución del
