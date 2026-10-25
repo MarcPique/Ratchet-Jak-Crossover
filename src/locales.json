@@ -1,0 +1,833 @@
+{
+  "languages": {
+    "en": {
+      "slot": 0,
+      "name": "English"
+    },
+    "fr": {
+      "slot": 2,
+      "name": "Français"
+    },
+    "de": {
+      "slot": 3,
+      "name": "Deutsch"
+    },
+    "es": {
+      "slot": 4,
+      "name": "Español"
+    },
+    "it": {
+      "slot": 5,
+      "name": "Italiano"
+    }
+  },
+  "game": {
+    "INDIVIDUAL": {
+      "es": "INDIVIDUAL",
+      "en": "SINGLE PLAYER",
+      "fr": "SOLO",
+      "de": "EINZELSPIELER",
+      "it": "GIOCATORE SINGOLO"
+    },
+    "MULTIJUGADOR": {
+      "es": "MULTIJUGADOR",
+      "en": "MULTIPLAYER",
+      "fr": "MULTIJOUEUR",
+      "de": "MEHRSPIELER",
+      "it": "MULTIGIOCATORE"
+    },
+    "CONTINUAR": {
+      "es": "CONTINUAR",
+      "en": "CONTINUE",
+      "fr": "CONTINUER",
+      "de": "FORTSETZEN",
+      "it": "CONTINUA"
+    },
+    "OPCIONES": {
+      "es": "OPCIONES",
+      "en": "OPTIONS",
+      "fr": "OPTIONS",
+      "de": "OPTIONEN",
+      "it": "OPZIONI"
+    },
+    "SALIR AL ESCRITORIO": {
+      "es": "SALIR AL ESCRITORIO",
+      "en": "EXIT TO DESKTOP",
+      "fr": "QUITTER",
+      "de": "ZUM DESKTOP",
+      "it": "ESCI AL DESKTOP"
+    },
+    "CAMPAMENTO / VELDIN": {
+      "es": "CAMPAMENTO / VELDIN",
+      "en": "CAMP / VELDIN",
+      "fr": "CAMP / VELDIN",
+      "de": "LAGER / VELDIN",
+      "it": "BASE / VELDIN"
+    },
+    "ELIGE TU EQUIPO": {
+      "es": "ELIGE TU EQUIPO",
+      "en": "CHOOSE YOUR TEAM",
+      "fr": "CHOISIR UNE EQUIPE",
+      "de": "TEAM WAEHLEN",
+      "it": "SCEGLI LA SQUADRA"
+    },
+    "INICIAR HISTORIA": {
+      "es": "INICIAR HISTORIA",
+      "en": "START STORY",
+      "fr": "LANCER HISTOIRE",
+      "de": "GESCHICHTE STARTEN",
+      "it": "INIZIA STORIA"
+    },
+    "VOLVER": {
+      "es": "VOLVER",
+      "en": "BACK",
+      "fr": "RETOUR",
+      "de": "ZURUECK",
+      "it": "INDIETRO"
+    },
+    "Flechas / stick: elegir": {
+      "es": "Flechas / stick: elegir",
+      "en": "Arrows / stick: select",
+      "fr": "Fleches / stick : choisir",
+      "de": "Pfeile / Stick: waehlen",
+      "it": "Frecce / stick: scegli"
+    },
+    "X/A Aceptar    O/B Volver": {
+      "es": "X/A Aceptar    O/B Volver",
+      "en": "X/A Confirm    O/B Back",
+      "fr": "X/A Valider    O/B Retour",
+      "de": "X/A Bestaetigen   O/B Zurueck",
+      "it": "X/A Conferma   O/B Indietro"
+    },
+    "GIRO: STICK/RATON": {
+      "es": "GIRO: STICK/RATON",
+      "en": "ROTATE: STICK/MOUSE",
+      "fr": "ROTATION: STICK/SOURIS",
+      "de": "DREHEN: STICK/MAUS",
+      "it": "RUOTA: STICK/MOUSE"
+    },
+    "ZOOM: L2/R2/RUEDA": {
+      "es": "ZOOM: L2/R2/RUEDA",
+      "en": "ZOOM: L2/R2/WHEEL",
+      "fr": "ZOOM: L2/R2/MOLETTE",
+      "de": "ZOOM: L2/R2/MAUSRAD",
+      "it": "ZOOM: L2/R2/ROTELLA"
+    },
+    "R3: CENTRAR": {
+      "es": "R3: CENTRAR",
+      "en": "R3: CENTER",
+      "fr": "R3: CENTRER",
+      "de": "R3: ZENTRIEREN",
+      "it": "R3: CENTRA"
+    },
+    "SELECCION DE EQUIPO": {
+      "es": "SELECCION DE EQUIPO",
+      "en": "TEAM SELECT",
+      "fr": "CHOIX DE L EQUIPE",
+      "de": "TEAMAUSWAHL",
+      "it": "SELEZIONE SQUADRA"
+    },
+    "JUGADOR 1": {
+      "es": "JUGADOR 1",
+      "en": "PLAYER 1",
+      "fr": "JOUEUR 1",
+      "de": "SPIELER 1",
+      "it": "GIOCATORE 1"
+    },
+    "JUGADOR 2": {
+      "es": "JUGADOR 2",
+      "en": "PLAYER 2",
+      "fr": "JOUEUR 2",
+      "de": "SPIELER 2",
+      "it": "GIOCATORE 2"
+    },
+    "LISTO / X PARA CAMBIAR": {
+      "es": "LISTO / X PARA CAMBIAR",
+      "en": "READY / X TO CHANGE",
+      "fr": "PRET / X POUR MODIFIER",
+      "de": "BEREIT / X ZUM AENDERN",
+      "it": "PRONTO / X PER CAMBIARE"
+    },
+    "LISTO": {
+      "es": "LISTO",
+      "en": "READY",
+      "fr": "PRET",
+      "de": "BEREIT",
+      "it": "PRONTO"
+    },
+    "CONFIRMAR EQUIPO": {
+      "es": "CONFIRMAR EQUIPO",
+      "en": "CONFIRM TEAM",
+      "fr": "VALIDER EQUIPE",
+      "de": "TEAM BESTAETIGEN",
+      "it": "CONFERMA SQUADRA"
+    },
+    "PANTALLA:": {
+      "es": "PANTALLA:",
+      "en": "SCREEN:",
+      "fr": "ECRAN:",
+      "de": "BILDSCHIRM:",
+      "it": "SCHERMO:"
+    },
+    "MANDO:": {
+      "es": "MANDO:",
+      "en": "CONTROLLER:",
+      "fr": "MANETTE:",
+      "de": "CONTROLLER:",
+      "it": "CONTROLLER:"
+    },
+    "MANDO ASIGNADO": {
+      "es": "MANDO ASIGNADO",
+      "en": "CONTROLLER ASSIGNED",
+      "fr": "MANETTE ASSIGNEE",
+      "de": "CONTROLLER ZUGEWIESEN",
+      "it": "CONTROLLER ASSEGNATO"
+    },
+    "TECLADO Y RATON": {
+      "es": "TECLADO Y RATON",
+      "en": "KEYBOARD AND MOUSE",
+      "fr": "CLAVIER ET SOURIS",
+      "de": "TASTATUR UND MAUS",
+      "it": "TASTIERA E MOUSE"
+    },
+    "SIN ASIGNAR": {
+      "es": "SIN ASIGNAR",
+      "en": "UNASSIGNED",
+      "fr": "NON ASSIGNE",
+      "de": "NICHT ZUGEWIESEN",
+      "it": "NON ASSEGNATO"
+    },
+    "DESCONECTADO:": {
+      "es": "DESCONECTADO:",
+      "en": "DISCONNECTED:",
+      "fr": "DECONNECTE:",
+      "de": "GETRENNT:",
+      "it": "SCOLLEGATO:"
+    },
+    "MANDO XBOX": {
+      "es": "MANDO XBOX",
+      "en": "XBOX CONTROLLER",
+      "fr": "MANETTE XBOX",
+      "de": "XBOX CONTROLLER",
+      "it": "CONTROLLER XBOX"
+    },
+    "MANDO": {
+      "es": "MANDO",
+      "en": "CONTROLLER",
+      "fr": "MANETTE",
+      "de": "CONTROLLER",
+      "it": "CONTROLLER"
+    },
+    "ASIGNA UN MANDO A CADA JUGADOR": {
+      "es": "ASIGNA UN MANDO A CADA JUGADOR",
+      "en": "ASSIGN ONE DEVICE PER PLAYER",
+      "fr": "UNE MANETTE PAR JOUEUR",
+      "de": "EIN GERAET PRO SPIELER",
+      "it": "UN DISPOSITIVO PER GIOCATORE"
+    },
+    "ELIGE TU MANDO O TECLADO": {
+      "es": "ELIGE TU MANDO O TECLADO",
+      "en": "CHOOSE CONTROLLER OR KEYBOARD",
+      "fr": "CHOISIR MANETTE OU CLAVIER",
+      "de": "CONTROLLER ODER TASTATUR",
+      "it": "SCEGLI CONTROLLER O TASTIERA"
+    },
+    "NO SE PUDO GUARDAR EL EQUIPO": {
+      "es": "NO SE PUDO GUARDAR EL EQUIPO",
+      "en": "COULD NOT SAVE TEAM",
+      "fr": "ECHEC SAUVEGARDE EQUIPE",
+      "de": "TEAM NICHT GESPEICHERT",
+      "it": "IMPOSSIBILE SALVARE SQUADRA"
+    },
+    "POR AHORA: UNA PAREJA DE CADA JUEGO": {
+      "es": "POR AHORA: UNA PAREJA DE CADA JUEGO",
+      "en": "CURRENTLY: ONE PAIR FROM EACH GAME",
+      "fr": "UNE PAIRE DE CHAQUE JEU",
+      "de": "JE EIN PAAR AUS JEDEM SPIEL",
+      "it": "UNA COPPIA PER CIASCUN GIOCO"
+    },
+    "PULSA START / ENTER": {
+      "es": "PULSA START / ENTER",
+      "en": "PRESS START / ENTER",
+      "fr": "APPUYER START / ENTREE",
+      "de": "START / EINGABE DRUECKEN",
+      "it": "PREMI START / INVIO"
+    },
+    "X / A / CLIC PARA CONTINUAR": {
+      "es": "X / A / CLIC PARA CONTINUAR",
+      "en": "X / A / CLICK TO CONTINUE",
+      "fr": "X / A / CLIC POUR CONTINUER",
+      "de": "X / A / KLICK ZUM FORTSETZEN",
+      "it": "X / A / CLIC PER CONTINUARE"
+    },
+    "CLASICO": {
+      "es": "CLASICO",
+      "en": "CLASSIC",
+      "fr": "CLASSIQUE",
+      "de": "KLASSISCH",
+      "it": "CLASSICO"
+    },
+    "CABEZA +": {
+      "es": "CABEZA +",
+      "en": "BIG HEAD",
+      "fr": "GRANDE TETE",
+      "de": "GROSSER KOPF",
+      "it": "TESTA GRANDE"
+    },
+    "CABEZA -": {
+      "es": "CABEZA -",
+      "en": "SMALL HEAD",
+      "fr": "PETITE TETE",
+      "de": "KLEINER KOPF",
+      "it": "TESTA PICCOLA"
+    },
+    "AZUL": {
+      "es": "AZUL",
+      "en": "BLUE",
+      "fr": "BLEU",
+      "de": "BLAU",
+      "it": "BLU"
+    },
+    "RATCHET Y CLANK": {
+      "es": "RATCHET Y CLANK",
+      "en": "RATCHET AND CLANK",
+      "fr": "RATCHET ET CLANK",
+      "de": "RATCHET UND CLANK",
+      "it": "RATCHET E CLANK"
+    },
+    "JAK Y DAXTER": {
+      "es": "JAK Y DAXTER",
+      "en": "JAK AND DAXTER",
+      "fr": "JAK ET DAXTER",
+      "de": "JAK UND DAXTER",
+      "it": "JAK E DAXTER"
+    },
+    "HORIZONTAL": {
+      "es": "HORIZONTAL",
+      "en": "HORIZONTAL",
+      "fr": "HORIZONTAL",
+      "de": "HORIZONTAL",
+      "it": "ORIZZONTALE"
+    },
+    "VERTICAL": {
+      "es": "VERTICAL",
+      "en": "VERTICAL",
+      "fr": "VERTICAL",
+      "de": "VERTIKAL",
+      "it": "VERTICALE"
+    },
+    "TECLADO > J1 | Retroceso: lado | X/A: unir mando": {
+      "es": "TECLADO > J1 | Retroceso: lado | X/A: unir mando",
+      "en": "KEYBOARD > P1 | Backspace: side | X/A: join",
+      "fr": "CLAVIER > J1 | Retour: cote | X/A: rejoindre",
+      "de": "TASTATUR > S1 | Ruecktaste: Seite | X/A: beitreten",
+      "it": "TASTIERA > G1 | Backspace: lato | X/A: unisci"
+    },
+    "TECLADO > J2 | Retroceso: lado | X/A: unir mando": {
+      "es": "TECLADO > J2 | Retroceso: lado | X/A: unir mando",
+      "en": "KEYBOARD > P2 | Backspace: side | X/A: join",
+      "fr": "CLAVIER > J2 | Retour: cote | X/A: rejoindre",
+      "de": "TASTATUR > S2 | Ruecktaste: Seite | X/A: beitreten",
+      "it": "TASTIERA > G2 | Backspace: lato | X/A: unisci"
+    },
+    "STICK DER: GIRAR | L2/R2: ZOOM | X/A: ELEGIR | START: LISTO": {
+      "es": "STICK DER: GIRAR | L2/R2: ZOOM | X/A: ELEGIR | START: LISTO",
+      "en": "RIGHT STICK: ROTATE | L2/R2: ZOOM | X/A: SELECT | START: READY",
+      "fr": "STICK DROIT: ROTATION | L2/R2: ZOOM | X/A: CHOISIR | START: PRET",
+      "de": "RECHTER STICK: DREHEN | L2/R2: ZOOM | X/A: WAHL | START: BEREIT",
+      "it": "STICK DESTRO: RUOTA | L2/R2: ZOOM | X/A: SCEGLI | START: PRONTO"
+    },
+    "ESPERANDO AL JUGADOR": {
+      "es": "ESPERANDO AL JUGADOR",
+      "en": "WAITING FOR PLAYER",
+      "fr": "ATTENTE DU JOUEUR",
+      "de": "WARTE AUF SPIELER",
+      "it": "ATTESA DEL GIOCATORE"
+    },
+    "ESPERANDO A JUGADOR": {
+      "es": "ESPERANDO A JUGADOR",
+      "en": "WAITING FOR PLAYER",
+      "fr": "ATTENTE DU JOUEUR",
+      "de": "WARTE AUF SPIELER",
+      "it": "ATTESA DEL GIOCATORE"
+    },
+    "Graphics": {
+      "en": "Graphics",
+      "fr": "Graphismes",
+      "de": "Grafik",
+      "es": "Graficos",
+      "it": "Grafica"
+    },
+    "Display": {
+      "en": "Display",
+      "fr": "Affichage",
+      "de": "Anzeige",
+      "es": "Pantalla",
+      "it": "Schermo"
+    },
+    "Resolution": {
+      "en": "Resolution",
+      "fr": "Resolution",
+      "de": "Aufloesung",
+      "es": "Resolucion",
+      "it": "Risoluzione"
+    },
+    "Aspect Ratio": {
+      "en": "Aspect Ratio",
+      "fr": "Format",
+      "de": "Seitenverhaeltnis",
+      "es": "Relacion de aspecto",
+      "it": "Formato"
+    },
+    "Render Scale": {
+      "en": "Render Scale",
+      "fr": "Echelle de rendu",
+      "de": "Render-Skalierung",
+      "es": "Escala de render",
+      "it": "Scala rendering"
+    },
+    "Window Mode": {
+      "en": "Window Mode",
+      "fr": "Mode fenetre",
+      "de": "Fenstermodus",
+      "es": "Modo de ventana",
+      "it": "Modalita finestra"
+    },
+    "Fullscreen": {
+      "en": "Fullscreen",
+      "fr": "Plein ecran",
+      "de": "Vollbild",
+      "es": "Pantalla completa",
+      "it": "Schermo intero"
+    },
+    "Borderless": {
+      "en": "Borderless",
+      "fr": "Sans bordures",
+      "de": "Randlos",
+      "es": "Sin bordes",
+      "it": "Senza bordi"
+    },
+    "Windowed": {
+      "en": "Windowed",
+      "fr": "Fenetre",
+      "de": "Fenster",
+      "es": "Ventana",
+      "it": "Finestra"
+    },
+    "Monitor": {
+      "en": "Monitor",
+      "fr": "Ecran",
+      "de": "Monitor",
+      "es": "Monitor",
+      "it": "Monitor"
+    },
+    "Refresh Rate": {
+      "en": "Refresh Rate",
+      "fr": "Frequence",
+      "de": "Bildfrequenz",
+      "es": "Frecuencia",
+      "it": "Frequenza"
+    },
+    "Anti-Aliasing": {
+      "en": "Anti-Aliasing",
+      "fr": "Anticrenelage",
+      "de": "Kantenglaettung",
+      "es": "Antialiasing",
+      "it": "Antialiasing"
+    },
+    "Frame Limit": {
+      "en": "Frame Limit",
+      "fr": "Limite FPS",
+      "de": "FPS-Limit",
+      "es": "Limite FPS",
+      "it": "Limite FPS"
+    },
+    "Show Stats": {
+      "en": "Show Stats",
+      "fr": "Statistiques",
+      "de": "Statistik anzeigen",
+      "es": "Mostrar estadisticas",
+      "it": "Mostra statistiche"
+    },
+    "Mouse Sensitivity": {
+      "en": "Mouse Sensitivity",
+      "fr": "Sensibilite souris",
+      "de": "Mausempfindlichkeit",
+      "es": "Sensibilidad del raton",
+      "it": "Sensibilita mouse"
+    },
+    "Invert Mouse Y": {
+      "en": "Invert Mouse Y",
+      "fr": "Inverser souris Y",
+      "de": "Maus Y umkehren",
+      "es": "Invertir raton Y",
+      "it": "Inverti mouse Y"
+    },
+    "Controls": {
+      "en": "Controls",
+      "fr": "Commandes",
+      "de": "Steuerung",
+      "es": "Controles",
+      "it": "Comandi"
+    },
+    "Keyboard": {
+      "en": "Keyboard",
+      "fr": "Clavier",
+      "de": "Tastatur",
+      "es": "Teclado",
+      "it": "Tastiera"
+    },
+    "Apply": {
+      "en": "Apply",
+      "fr": "Appliquer",
+      "de": "Anwenden",
+      "es": "Aplicar",
+      "it": "Applica"
+    },
+    "Back": {
+      "en": "Back",
+      "fr": "Retour",
+      "de": "Zurueck",
+      "es": "Volver",
+      "it": "Indietro"
+    },
+    "On": {
+      "en": "On",
+      "fr": "Active",
+      "de": "Ein",
+      "es": "Activado",
+      "it": "Attivo"
+    },
+    "Off": {
+      "en": "Off",
+      "fr": "Desactive",
+      "de": "Aus",
+      "es": "Desactivado",
+      "it": "Disattivo"
+    }
+  },
+  "setup": {
+    "Ratchet&Jak — Generador experimental": {
+      "es": "Ratchet&Jak — Generador experimental",
+      "en": "Ratchet&Jak — Experimental generator",
+      "fr": "Ratchet&Jak — Generateur experimental",
+      "de": "Ratchet&Jak — Experimenteller Generator",
+      "it": "Ratchet&Jak — Generatore sperimentale"
+    },
+    "BETA EXPERIMENTAL": {
+      "es": "BETA EXPERIMENTAL",
+      "en": "EXPERIMENTAL BETA",
+      "fr": "BETA EXPERIMENTALE",
+      "de": "EXPERIMENTELLE BETA",
+      "it": "BETA SPERIMENTALE"
+    },
+    "Elige tus dos ISO. Se creará una instalación nueva y un EXE con este icono en tu escritorio.": {
+      "es": "Elige tus dos ISO. Se creará una instalación nueva y un EXE con este icono en tu escritorio.",
+      "en": "Choose your two ISOs. A new installation and a branded desktop EXE will be created.",
+      "fr": "Choisissez vos deux ISO. Une nouvelle installation et un EXE seront crees sur votre bureau.",
+      "de": "Waehle deine beiden ISOs. Eine neue Installation und eine Desktop-EXE werden erstellt.",
+      "it": "Scegli le due ISO. Verranno create una nuova installazione e una EXE sul desktop."
+    },
+    "Instalar en una carpeta nueva": {
+      "es": "Instalar en una carpeta nueva",
+      "en": "Install in a new folder",
+      "fr": "Installer dans un nouveau dossier",
+      "de": "In neuem Ordner installieren",
+      "it": "Installa in una nuova cartella"
+    },
+    "Elegir…": {
+      "es": "Elegir…",
+      "en": "Browse…",
+      "fr": "Parcourir…",
+      "de": "Auswaehlen…",
+      "it": "Sfoglia…"
+    },
+    "Generar beta y EXE del escritorio": {
+      "es": "Generar beta y EXE del escritorio",
+      "en": "Generate beta and desktop EXE",
+      "fr": "Generer la beta et l EXE du bureau",
+      "de": "Beta und Desktop-EXE erstellen",
+      "it": "Genera beta ed EXE sul desktop"
+    },
+    "No incluye los juegos. Campañas completas aún pendientes.": {
+      "es": "No incluye los juegos. Campañas completas aún pendientes.",
+      "en": "Retail games are not included. Full campaigns are unfinished.",
+      "fr": "Jeux commerciaux non inclus. Campagnes completes en cours.",
+      "de": "Keine Originalspiele enthalten. Kampagnen noch unvollstaendig.",
+      "it": "Giochi originali non inclusi. Campagne complete in sviluppo."
+    },
+    "Elige una carpeta vacía o nueva": {
+      "es": "Elige una carpeta vacía o nueva",
+      "en": "Choose an empty or new folder",
+      "fr": "Choisissez un dossier vide ou nouveau",
+      "de": "Leeren oder neuen Ordner waehlen",
+      "it": "Scegli una cartella vuota o nuova"
+    },
+    "ISO de PlayStation 2": {
+      "es": "ISO de PlayStation 2",
+      "en": "PlayStation 2 ISO",
+      "fr": "ISO PlayStation 2",
+      "de": "PlayStation-2-ISO",
+      "it": "ISO PlayStation 2"
+    },
+    "LISTO. Abre Ratchet&Jak desde tu escritorio.": {
+      "es": "LISTO. Abre Ratchet&Jak desde tu escritorio.",
+      "en": "READY. Open Ratchet&Jak from your desktop.",
+      "fr": "TERMINE. Ouvrez Ratchet&Jak depuis votre bureau.",
+      "de": "FERTIG. Starte Ratchet&Jak vom Desktop.",
+      "it": "PRONTO. Apri Ratchet&Jak dal desktop."
+    },
+    "No completado. Lee el registro; la instalación anterior está a salvo.": {
+      "es": "No completado. Lee el registro; la instalación anterior está a salvo.",
+      "en": "Not completed. Read the log; existing installations were preserved.",
+      "fr": "Non termine. Consultez le journal ; installations existantes conservees.",
+      "de": "Nicht abgeschlossen. Protokoll lesen; vorhandene Installationen bleiben erhalten.",
+      "it": "Non completato. Leggi il registro; le installazioni esistenti sono intatte."
+    },
+    "La generación sigue activa. Espera a que termine; el registro muestra la fase actual.": {
+      "es": "La generación sigue activa. Espera a que termine; el registro muestra la fase actual.",
+      "en": "Generation is still running. The log shows the current stage.",
+      "fr": "La generation continue. Le journal indique la phase en cours.",
+      "de": "Erstellung laeuft noch. Das Protokoll zeigt den aktuellen Schritt.",
+      "it": "Generazione in corso. Il registro mostra la fase attuale."
+    },
+    "Preparar herramientas incluidas": {
+      "es": "Preparar herramientas incluidas",
+      "en": "Preparing bundled tools",
+      "fr": "Preparation des outils inclus",
+      "de": "Enthaltene Werkzeuge vorbereiten",
+      "it": "Preparazione strumenti inclusi"
+    },
+    "Identificar Ratchet SCUS_971.99": {
+      "es": "Identificar Ratchet SCUS_971.99",
+      "en": "Identify Ratchet SCUS_971.99",
+      "fr": "Identifier Ratchet SCUS_971.99",
+      "de": "Ratchet SCUS_971.99 erkennen",
+      "it": "Identifica Ratchet SCUS_971.99"
+    },
+    "Extraer Ratchet desde tu ISO": {
+      "es": "Extraer Ratchet desde tu ISO",
+      "en": "Extract Ratchet from your ISO",
+      "fr": "Extraire Ratchet de votre ISO",
+      "de": "Ratchet aus deiner ISO extrahieren",
+      "it": "Estrai Ratchet dalla tua ISO"
+    },
+    "Verificar Ratchet": {
+      "es": "Verificar Ratchet",
+      "en": "Verify Ratchet",
+      "fr": "Verifier Ratchet",
+      "de": "Ratchet pruefen",
+      "it": "Verifica Ratchet"
+    },
+    "Extraer y validar Jak SCUS_971.24": {
+      "es": "Extraer y validar Jak SCUS_971.24",
+      "en": "Extract and validate Jak SCUS_971.24",
+      "fr": "Extraire et verifier Jak SCUS_971.24",
+      "de": "Jak SCUS_971.24 extrahieren und pruefen",
+      "it": "Estrai e verifica Jak SCUS_971.24"
+    },
+    "Restaurar datos de ojos": {
+      "es": "Restaurar datos de ojos",
+      "en": "Restore eye data",
+      "fr": "Restaurer les yeux",
+      "de": "Augendaten wiederherstellen",
+      "it": "Ripristina gli occhi"
+    },
+    "Preparar Jak y Daxter animados": {
+      "es": "Preparar Jak y Daxter animados",
+      "en": "Prepare animated Jak and Daxter",
+      "fr": "Preparer Jak et Daxter animes",
+      "de": "Animierte Jak und Daxter vorbereiten",
+      "it": "Prepara Jak e Daxter animati"
+    },
+    "Verificar esqueletos y animaciones": {
+      "es": "Verificar esqueletos y animaciones",
+      "en": "Verify rigs and animations",
+      "fr": "Verifier squelettes et animations",
+      "de": "Skelette und Animationen pruefen",
+      "it": "Verifica scheletri e animazioni"
+    },
+    "Preparar escenario, Clank y menú": {
+      "es": "Preparar escenario, Clank y menú",
+      "en": "Prepare scene, Clank and menu",
+      "fr": "Preparer decor, Clank et menu",
+      "de": "Szene, Clank und Menue vorbereiten",
+      "it": "Prepara scenario, Clank e menu"
+    },
+    "Preparar efectos Eco originales": {
+      "es": "Preparar efectos Eco originales",
+      "en": "Prepare original Eco effects",
+      "fr": "Preparer les effets Eco originaux",
+      "de": "Originale Eco-Effekte vorbereiten",
+      "it": "Prepara gli effetti Eco originali"
+    },
+    "Comprobar motor nativo": {
+      "es": "Comprobar motor nativo",
+      "en": "Check native engine",
+      "fr": "Verifier le moteur natif",
+      "de": "Native Engine pruefen",
+      "it": "Verifica il motore nativo"
+    },
+    "Finalizar instalación": {
+      "es": "Finalizar instalación",
+      "en": "Finalize installation",
+      "fr": "Finaliser l installation",
+      "de": "Installation abschliessen",
+      "it": "Completa l installazione"
+    },
+    "Crear EXE en el escritorio": {
+      "es": "Crear EXE en el escritorio",
+      "en": "Create desktop EXE",
+      "fr": "Creer l EXE sur le bureau",
+      "de": "Desktop-EXE erstellen",
+      "it": "Crea EXE sul desktop"
+    },
+    "Verificar acceso de escritorio": {
+      "es": "Verificar acceso de escritorio",
+      "en": "Verify desktop launcher",
+      "fr": "Verifier le lanceur du bureau",
+      "de": "Desktop-Starter pruefen",
+      "it": "Verifica l avvio dal desktop"
+    },
+    "Se necesita Windows de 64 bits.": {
+      "es": "Se necesita Windows de 64 bits.",
+      "en": "64-bit Windows is required.",
+      "fr": "Windows 64 bits requis.",
+      "de": "Windows mit 64 Bit erforderlich.",
+      "it": "Serve Windows a 64 bit."
+    },
+    "El destino debe estar vacío. No se sustituyen instalaciones ni partidas.": {
+      "es": "El destino debe estar vacío. No se sustituyen instalaciones ni partidas.",
+      "en": "The destination must be empty. Existing installations and saves are preserved.",
+      "fr": "Le dossier doit etre vide. Installations et sauvegardes existantes conservees.",
+      "de": "Der Zielordner muss leer sein. Installationen und Spielstaende bleiben erhalten.",
+      "it": "La destinazione deve essere vuota. Installazioni e salvataggi esistenti sono conservati."
+    },
+    "Selecciona dos ISO distintas.": {
+      "es": "Selecciona dos ISO distintas.",
+      "en": "Choose two different ISOs.",
+      "fr": "Choisissez deux ISO differentes.",
+      "de": "Zwei verschiedene ISOs waehlen.",
+      "it": "Scegli due ISO diverse."
+    },
+    "El paquete del generador está dañado.": {
+      "es": "El paquete del generador está dañado.",
+      "en": "The generator package is damaged.",
+      "fr": "Le paquet du generateur est endommage.",
+      "de": "Das Generatorpaket ist beschaedigt.",
+      "it": "Il pacchetto del generatore e danneggiato."
+    },
+    "No se completó la generación. Consulta build.log. Se conserva el diagnóstico y no se altera ningún original.": {
+      "es": "No se completó la generación. Consulta build.log. Se conserva el diagnóstico y no se altera ningún original.",
+      "en": "Generation failed. See build.log. Diagnostics were kept and original files were preserved.",
+      "fr": "Echec de generation. Consultez build.log. Diagnostic conserve et originaux intacts.",
+      "de": "Erstellung fehlgeschlagen. Siehe build.log. Diagnose erhalten, Originale unveraendert.",
+      "it": "Generazione non completata. Vedi build.log. Diagnostica conservata e originali intatti."
+    },
+    "Elige una carpeta nueva, no la raíz del disco.": {
+      "es": "Elige una carpeta nueva, no la raíz del disco.",
+      "en": "Choose a new folder, not the drive root.",
+      "fr": "Choisissez un nouveau dossier, pas la racine du disque.",
+      "de": "Neuen Ordner waehlen, nicht das Laufwerksverzeichnis.",
+      "it": "Scegli una nuova cartella, non la radice del disco."
+    },
+    "Debe existir la carpeta padre del destino.": {
+      "es": "Debe existir la carpeta padre del destino.",
+      "en": "The destination parent folder must exist.",
+      "fr": "Le dossier parent de destination doit exister.",
+      "de": "Der uebergeordnete Zielordner muss existieren.",
+      "it": "La cartella superiore della destinazione deve esistere."
+    },
+    "No existe la ISO: ": {
+      "es": "No existe la ISO: ",
+      "en": "ISO file not found: ",
+      "fr": "Fichier ISO introuvable : ",
+      "de": "ISO nicht gefunden: ",
+      "it": "ISO non trovata: "
+    },
+    "Las ISO deben quedar fuera del destino.": {
+      "es": "Las ISO deben quedar fuera del destino.",
+      "en": "ISOs must be outside the destination.",
+      "fr": "Les ISO doivent etre hors du dossier cible.",
+      "de": "ISOs muessen ausserhalb des Zielordners liegen.",
+      "it": "Le ISO devono essere fuori dalla destinazione."
+    },
+    "Ratchet requiere NTSC-U SCUS_971.99 v1.00. Detectado: ": {
+      "es": "Ratchet requiere NTSC-U SCUS_971.99 v1.00. Detectado: ",
+      "en": "Ratchet requires NTSC-U SCUS_971.99 v1.00. Found: ",
+      "fr": "Ratchet exige NTSC-U SCUS_971.99 v1.00. Detecte : ",
+      "de": "Ratchet braucht NTSC-U SCUS_971.99 v1.00. Erkannt: ",
+      "it": "Ratchet richiede NTSC-U SCUS_971.99 v1.00. Rilevato: "
+    },
+    "La revisión Ratchet no coincide con v1.00.": {
+      "es": "La revisión Ratchet no coincide con v1.00.",
+      "en": "Ratchet revision does not match v1.00.",
+      "fr": "La revision de Ratchet ne correspond pas a v1.00.",
+      "de": "Ratchet-Revision stimmt nicht mit v1.00 ueberein.",
+      "it": "La revisione di Ratchet non corrisponde a v1.00."
+    },
+    "Jak requiere The Precursor Legacy NTSC-U SCUS_971.24. Detectado: ": {
+      "es": "Jak requiere The Precursor Legacy NTSC-U SCUS_971.24. Detectado: ",
+      "en": "Jak requires The Precursor Legacy NTSC-U SCUS_971.24. Found: ",
+      "fr": "Jak exige The Precursor Legacy NTSC-U SCUS_971.24. Detecte : ",
+      "de": "Jak braucht The Precursor Legacy NTSC-U SCUS_971.24. Erkannt: ",
+      "it": "Jak richiede The Precursor Legacy NTSC-U SCUS_971.24. Rilevato: "
+    },
+    "Espacio insuficiente. Reserva estimada: ": {
+      "es": "Espacio insuficiente. Reserva estimada: ",
+      "en": "Not enough space. Estimated requirement: ",
+      "fr": "Espace insuffisant. Reserve estimee : ",
+      "de": "Nicht genug Speicherplatz. Geschaetzter Bedarf: ",
+      "it": "Spazio insufficiente. Spazio stimato: "
+    },
+    "No existe la carpeta del escritorio.": {
+      "es": "No existe la carpeta del escritorio.",
+      "en": "The desktop folder does not exist.",
+      "fr": "Le dossier du bureau est introuvable.",
+      "de": "Der Desktop-Ordner existiert nicht.",
+      "it": "La cartella del desktop non esiste."
+    },
+    "Falta el paquete de herramientas.": {
+      "es": "Falta el paquete de herramientas.",
+      "en": "Bundled tools are missing.",
+      "fr": "Outils inclus introuvables.",
+      "de": "Enthaltene Werkzeuge fehlen.",
+      "it": "Strumenti inclusi mancanti."
+    },
+    "Paquete inválido.": {
+      "es": "Paquete inválido.",
+      "en": "Invalid package.",
+      "fr": "Paquet invalide.",
+      "de": "Ungueltiges Paket.",
+      "it": "Pacchetto non valido."
+    },
+    "Ruta ZIP inválida.": {
+      "es": "Ruta ZIP inválida.",
+      "en": "Invalid ZIP path.",
+      "fr": "Chemin ZIP invalide.",
+      "de": "Ungueltiger ZIP-Pfad.",
+      "it": "Percorso ZIP non valido."
+    },
+    "Paquete demasiado grande.": {
+      "es": "Paquete demasiado grande.",
+      "en": "Package is too large.",
+      "fr": "Paquet trop volumineux.",
+      "de": "Paket ist zu gross.",
+      "it": "Pacchetto troppo grande."
+    },
+    "Discos compatibles identificados. OpenGOAL y el extractor verificarán el contenido completo.": {
+      "es": "Discos compatibles identificados. OpenGOAL y el extractor verificarán el contenido completo.",
+      "en": "Compatible discs identified. OpenGOAL and the extractor will verify the full content.",
+      "fr": "Disques compatibles identifies. OpenGOAL et l extracteur verifieront tout le contenu.",
+      "de": "Kompatible Discs erkannt. OpenGOAL und der Extraktor pruefen den gesamten Inhalt.",
+      "it": "Dischi compatibili identificati. OpenGOAL e l estrattore verificheranno tutto il contenuto."
+    },
+    "Opción desconocida.": {
+      "es": "Opción desconocida.",
+      "en": "Unknown option.",
+      "fr": "Option inconnue.",
+      "de": "Unbekannte Option.",
+      "it": "Opzione sconosciuta."
+    }
+  }
+}

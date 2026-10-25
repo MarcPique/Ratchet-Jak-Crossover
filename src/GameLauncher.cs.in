@@ -1,0 +1,32 @@
+// Private per-install launcher. This template contains no game assets.
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+using System.Windows.Forms;
+internal static class GameLauncher {
+ [STAThread] static int Main(string[] args){
+  try{
+   const string root=@"__GAME_ROOT__";
+   string game=Path.Combine(root,"RatchetJakCrossover.exe");
+   if(!File.Exists(game))throw new IOException("La instalación se ha movido. Genera de nuevo el acceso desde su carpeta original.");
+   bool test=args.Length==1&&args[0]=="--self-test";
+   if(args.Length!=0&&!test)throw new IOException("Opción desconocida.");
+   string profile=Path.Combine(root,"UserData");string temp=Path.Combine(profile,"temp");Directory.CreateDirectory(temp);
+   var start=new ProcessStartInfo(game){WorkingDirectory=root,UseShellExecute=false,CreateNoWindow=true};
+   var keys=new System.Collections.Generic.List<string>();foreach(string key in start.EnvironmentVariables.Keys)if(key.StartsWith("RC_",StringComparison.OrdinalIgnoreCase)||key.StartsWith("RJC_",StringComparison.OrdinalIgnoreCase))keys.Add(key);
+   foreach(string key in keys)start.EnvironmentVariables.Remove(key);
+   foreach(string key in new[]{"TEMP","TMP","TMPDIR"})start.EnvironmentVariables[key]=temp;
+   start.EnvironmentVariables["RJC_USER_DIR"]=profile;start.EnvironmentVariables["RC_SETTINGS_FILE"]=Path.Combine(profile,"settings.toml");
+   start.EnvironmentVariables["RC_RESOLUTION"]="window";start.EnvironmentVariables["RC_RENDER_SCALE"]="100";
+   start.EnvironmentVariables["RC_FRONTEND"]="1";start.EnvironmentVariables["RC_FULLSCREEN"]="1";
+   start.EnvironmentVariables["RC_ASPECT"]="monitor";start.EnvironmentVariables["RC_LEVEL"]="0";
+   start.EnvironmentVariables["RC_SCENE"]="0";start.EnvironmentVariables["RC_MOVIE_SKIP"]="30";
+   if(test){start.Arguments="--version-json";start.RedirectStandardOutput=true;start.RedirectStandardError=true;}
+   using(var proc=Process.Start(start)){
+    if(test){string value=proc.StandardOutput.ReadToEnd();string error=proc.StandardError.ReadToEnd();proc.WaitForExit();if(proc.ExitCode!=0||value.IndexOf("RatchetJakCrossover",StringComparison.Ordinal)<0)throw new IOException("Comprobación fallida: "+error);File.WriteAllText(Path.Combine(profile,"launcher-check.json"),value,new UTF8Encoding(false));return 0;}
+    proc.WaitForExit();return proc.ExitCode;
+   }
+  }catch(Exception e){MessageBox.Show(e.Message,"Ratchet&Jak",MessageBoxButtons.OK,MessageBoxIcon.Error);return 1;}
+ }
+}

@@ -1,0 +1,3 @@
+Application-local release CRT DLLs from Microsoft.VC143.CRT, not Debug_NonRedist.
+Microsoft license directory: https://visualstudio.microsoft.com/license-terms/
+Deployment reference: https://learn.microsoft.com/cpp/windows/redistributing-visual-cpp-files

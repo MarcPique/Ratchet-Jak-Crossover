@@ -1,0 +1,16 @@
+build/
+dist/
+payload/
+payload.zip
+*.exe
+*.dll
+*.iso
+*.glb
+*.gltf
+*.rgba
+*.log
+*.local.json
+__pycache__/
+Data/
+UserData/
+.builder/
