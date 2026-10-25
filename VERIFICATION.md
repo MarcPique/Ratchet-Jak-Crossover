@@ -21,6 +21,16 @@ la indicación sigue el mismo enrutamiento usado por el menú.
 - Motor: `8ca7e846bbeb0edaaddba651396b331fe031d6f329c7673b99b7778ee32ee52d`
 - Generador: `e8307a052d3b3cf0975b74d745d13125222cd8bb1448eb9f094524412ab94cf5`
 
+### Captura de selección de personajes
+
+Cliente nativo alpha27 / 0.2.1, hash 8CA7E846. Se abrió START, se eligió
+Multijugador y se capturó el frame 4600 exacto, exit 0, con salida 3840×2160.
+Imagen real revisada de dos paneles de selección y previews 3D. La ejecución
+se mantuvo oculta desde el arranque, sin tomar el foco ni enviar teclas al sistema.
+El segundo dispositivo sin asignar es el estado real de este ensayo. No se
+afirma una nueva comprobación de dos mandos físicos ni se cambia el porcentaje
+global por añadir la imagen.
+
 ## Referencia histórica: 0.2.0-beta.1 / alpha26
 
 Fecha: **25 de octubre de 2026**. Motor **V19 alpha26 experimental**, basado en

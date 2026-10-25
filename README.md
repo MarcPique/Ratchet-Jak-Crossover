@@ -89,6 +89,13 @@ cada mitad vertical de cooperativo mide 1920×2160. No son maquetas ni pruebas c
 
 ![Menú de la beta generada](assets/menu.png)
 
+![Selección de personajes con dos paneles y vistas 3D](assets/seleccion-personajes.png)
+
+Selección multijugador en alpha27 / 0.2.1: pareja, aspectos, disposición de
+pantalla y dispositivo por jugador. Las vistas 3D muestran los personajes con
+sus animaciones. La captura usa entradas programadas; el segundo dispositivo
+figura sin asignar y no representa una prueba con dos mandos físicos.
+
 ![Cooperativo con Jak, Daxter y Clank naranja](assets/cooperativo.png)
 
 ## Controles principales
