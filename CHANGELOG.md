@@ -3,8 +3,9 @@
 ## Desarrollo interno — 26 de octubre de 2026 (sin nueva release)
 
 - Captura real de selección multijugador publicada y enlazada desde el README.
-- Documentadas las pruebas de cornisas de alpha31 y paredes/techos magnéticos de alpha32.
-- Documentados los límites y la verificación pendiente de arma y cámara al abandonar superficies magnéticas.
+- Actualizados los resultados internos: cornisas, recorrido magnético y retorno al suelo con arma y cámara recuperadas, en individual y cooperativo (alpha35).
+- Documentados guardado/carga de Jak como J2 y confirmación de sobrescritura en cooperativo (alpha36).
+- Registrado el fallo pendiente de R2 tras cargar a Jak como personaje principal (alpha37); no se anuncia como corregido en una build jugable.
 - La descarga pública conserva 0.2.1-beta.1 / alpha27; las mejoras internas no se anuncian como incluidas.
 - Progreso global conservado en 13/100.
 

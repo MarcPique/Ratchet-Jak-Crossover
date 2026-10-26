@@ -16,10 +16,12 @@ en el generador. Ambas campañas completas siguen pendientes.
 
 ## Avances de desarrollo — 26 de octubre de 2026
 
-Las pruebas internas más recientes cubren agarres y subida de cornisas, además
-de paredes y techos magnéticos en Orxon con Jak. La recuperación del arma y la
-cámara al volver al suelo sigue en verificación. Estos cambios todavía no están
-en el generador público 0.2.1 / alpha27. Consulta el [estado detallado](DEVELOPMENT.md).
+Las pruebas internas verifican cornisas, el recorrido magnético de Orxon y la
+recuperación del arma y la cámara al volver al suelo, en individual y cooperativo.
+También se ha comprobado guardar y cargar a Jak como J2 en una zona magnética.
+Sigue pendiente corregir y verificar la recuperación del arma con R2 al cargar
+a Jak como personaje principal. Estos cambios todavía no están en el generador
+público 0.2.1 / alpha27. Consulta el [estado detallado](DEVELOPMENT.md).
 
 [Ver la captura real de selección de personajes](assets/seleccion-personajes.png).
 

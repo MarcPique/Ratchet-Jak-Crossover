@@ -4,7 +4,7 @@
 
 La prioridad es terminar la campaña de Ratchet con Jak/Daxter. Los ensayos
 siguientes pertenecen a builds internas posteriores y todavía no están incluidos
-en el generador descargable.
+en el generador descargable. No hay una nueva release en esta actualización.
 
 ## Selección de personajes
 
@@ -19,42 +19,57 @@ la imagen ya publicada; no se presenta como una nueva prueba física.
 
 | Área | Evidencia | Pendiente |
 |---|---|---|
-| Cornisas, alpha31 | Subida en individual y cooperativo, escenarios acotados con el cliente nativo y capturas 4K revisadas | Repertorio completo de niveles y recorridos de campaña |
-| Botas magnéticas, alpha32 | Jak sobre paredes y techo originales de Orxon; tres clientes completados, capturas 4K revisadas | Regresiones y progresión normal hasta estas zonas |
-| Cámara magnética cooperativa, alpha32 | Cámara propia siguiendo la gravedad de Jak; la otra vista permanece independiente; dos mitades de 1920×2160 con MSAA 4 | Más geometrías, transiciones y uso físico de dos mandos |
-| Restauración de arma y cámara | Corrección implementada; 832 pruebas del núcleo superadas en esa revisión | Compilar y verificar en el cliente el retorno al suelo y el disparo posterior |
-| Raíles y campaña completa | En desarrollo | Adaptación de raíles y campaña hasta créditos con Jak |
+| Cornisas, alpha31 y regresión alpha35 | Subida en individual y cooperativo; cliente nativo y capturas 4K revisadas | Más niveles y recorridos legítimos de campaña |
+| Botas magnéticas, alpha35 | Jak recorre pared y techo de Orxon y vuelve al suelo; pruebas individual y cooperativa de 9600 frames con capturas exactas y salida correcta | Progresión normal hasta estas zonas y más geometrías |
+| Arma y cámara al salir, alpha35 | Recupera Blaster, apunta y dispara seis veces: 100→94 balas; la munición de J1 permanece en 100 | Otros gadgets, armas y transiciones |
+| Regresiones, alpha35 | Agua→Hydro→impulso/planeo, Swingshot y cornisa comprobados en clientes nativos con capturas 4K revisadas | Repertorio completo de acciones y niveles |
+| Guardado/carga de Jak como J2, alpha36 | Guarda mientras el arma está temporalmente recogida en la superficie magnética; otro proceso carga sin conceder objetos y dispara seis veces: 94→88 balas | Otros checkpoints y combinaciones de personajes |
+| Confirmación de guardado, alpha36 | Corregido círculo=Sí en la confirmación original de sobrescritura; clic derecho cancela. Pausar desde J2 congela a ambos mientras J1 guarda | Comprobación física con dos mandos |
+| Carga de Jak como personaje principal, alpha37 | La comparación reproduce un fallo: Ratchet recupera el arma al disparar; Jak permanece con la llave al pulsar R2 | Verificar la corrección en una nueva compilación y cliente nativo |
+| Raíles y campaña completa | Pendientes | Adaptar raíles y recorrer la campaña hasta créditos con Jak |
 
-En la comparación de física de Orxon, 1060 posiciones del recorrido adaptado de
-Jak coincidieron con las de Ratchet. Esto prueba ese recorrido y sus condiciones;
-no equivale a terminar el nivel ni la campaña.
+En cooperativo, las pruebas aceptadas conservan dos imágenes distintas de
+1920×2160 con MSAA 4 dentro de una captura de 3840×2160. Son comprobaciones
+programadas de escenarios concretos, sin prueba física nueva de dos mandos.
 
-## Armas en superficies magnéticas
+## Armas y guardado en superficies magnéticas
 
-El comportamiento original guarda el arma durante el contacto magnético. Un
-ensayo de alpha33 que esperaba disparos en el techo falló; se conserva como
-resultado negativo. No se certifica disparo durante ese contacto.
+Se respeta el comportamiento original: el arma se recoge durante el contacto
+magnético. La prueba de alpha34 confirma que no se disparan balas en ese estado.
+Un ensayo anterior que esperaba disparar en el techo falló y se conserva como
+resultado negativo.
 
-La corrección posterior solicita recuperar el arma guardada y liberar las pistas
-de cámara al volver a la locomoción normal de Jak. Su prueba de núcleo conserva
-37 balas y recupera el arma esperada. Falta verificar la secuencia completa en
-el cliente nativo: superficie magnética → suelo → cámara normal → apuntar y disparar.
+Alpha35 completa el recorrido de salida mediante movimiento programado relativo
+a la cámara, sin teletransportar al personaje después de iniciar el escenario.
+Tanto Jak individual como Jak en J2 vuelven a una plataforma normal de Orxon,
+recuperan el arma y disparan. Esto no equivale a terminar el nivel ni la campaña.
 
-Un diagnóstico posterior de 5000 ticks, con avance programado, no encontró un
-retorno sano al suelo normal, tanto para Ratchet como para Jak. Se trata de una
-búsqueda de ruta, sin actualización completa de objetos del mundo; no demuestra
-un defecto exclusivo de Jak ni una salida del recorrido superada.
+En alpha36, el guardado de J2 conserva el arma prevista y sus 94 balas aunque
+la mano viva esté ocupada por el contexto magnético. La carga positiva se realiza
+en otro proceso, desde una copia privada de esa misma partida y con el mismo
+EXE. Se confirma el aviso inicial de guardado y se verifican seis disparos reales,
+sin añadir armas o munición al cargar. La plantilla y los archivos de partida
+comprobados se mantienen sin cambios durante la carga.
 
-## Próximos hitos de esta adaptación
+El primer intento de carga de alpha36 se quedó esperando ese aviso inicial;
+no se cuenta como aprobado. La comprobación positiva procede de otro cliente.
 
-1. Verificar el retorno al suelo conservando arma, munición y cámara por jugador.
-2. Repetir regresiones de agua, planeo, Swingshot y cornisas.
-3. Comprobar guardado/carga en contexto magnético y adaptar raíles.
+La comparación posterior de alpha37 revela un caso distinto en individual:
+Ratchet recupera el Blaster y dispara tras cargar, pero Jak no lo recupera con
+R2. Esto demuestra un problema de selección/disparo; no demuestra que la munición
+se haya borrado. La adaptación de R2 supera 835 pruebas del núcleo, pero todavía
+requiere compilar y probar el ejecutable nativo antes de declararla corregida.
+
+## Próximos hitos
+
+1. Verificar la recuperación del arma con R2 al cargar a Jak como personaje principal.
+2. Comprobar que la adaptación mantiene las restricciones magnéticas y el disparo propio de J2.
+3. Adaptar y probar raíles/cables frente al comportamiento original.
 4. Recorrer la campaña de Ratchet con Jak hasta créditos antes de darla por completada.
 
-Todas estas pruebas usan escenarios y entradas programadas. La confirmación
-física histórica de DualSense Edge Bluetooth en menú y reconexión no se amplía
-a estas builds. Ambas campañas completas, los viajes entre universos y la
-compatibilidad completa con mandos siguen pendientes.
+Las poses, manos, anclajes de compañeros y escapes siguen siendo experimentales.
+La confirmación física histórica de DualSense Edge Bluetooth en menú y reconexión
+no se amplía a estas builds. Ambas campañas completas, los viajes entre universos
+y la compatibilidad completa con mandos siguen pendientes.
 
 La descarga y sus hashes continúan documentados en [VERIFICATION.md](VERIFICATION.md).
