@@ -1,5 +1,17 @@
 # Cambios
 
+## 0.2.3-beta.1 — alpha48
+
+- Selector de raíles del Veldin final independiente por jugador; dos recorridos
+  originales simultáneos en sentidos opuestos verificados.
+- Eliminada la omisión automática de películas y la anulación de escenas de llegada
+  del lanzador. Tres vídeos iniciales completos y regreso al cooperativo comprobados
+  en una instalación recién generada desde ISO.
+- Regresión de agua a impulso/planeo48 en4K, cámaras simétricas;844núcleo y170motor.
+- Nuevo generador, cinco idiomas, cinco rechazos de seguridad y capturas reales48.
+- Global13/100; ambas campañas y el pulido visual completo siguen pendientes.
+
+
 ## 0.2.2-beta.1 — 26 de octubre de 2026
 
 - Motor alpha47: corrige la incompatibilidad entre attachments y pipeline de efectos al sustituir el nivel después de los vídeos iniciales.

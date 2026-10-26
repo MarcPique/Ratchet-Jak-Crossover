@@ -1,6 +1,52 @@
 # Verificación
 
-## 0.2.2-beta.1 — corrección de partida nueva / alpha47
+## 0.2.3-beta.1 / alpha48
+
+- Motor SHA-256: `5b62b7d0abb922147cedd18281c3d5525711746172a636ca8f26bd3ff998d949`.
+- Generador SHA-256: `cd83e009acb231667d108e8712ea088de860a14c08e388d2849e64fb32449fee`;103041024bytes.
+- 844 pruebas del núcleo superadas/1ignorada y170 del motor/3ignoradas;
+  compilación nueva del ejecutable. Una prueba roja previa demostró que el
+  selector de raíles daba alcance a J1 y no a J2.
+- La regla original de Veldin18 se calcula por actor. J2 conserva su propia
+  copia de los radios de búsqueda y la mantiene durante su recorrido, aunque
+  J1 se mueva. Se reconstruye al reaparecer y no se guarda geometría en la partida.
+  Se comprueba que una recompensa pendiente no se pierde al actualizar la regla.
+- Dos clientes48 sobre los raíles originales1/5, con los extremos intercambiados:
+  ambos jugadores montados simultáneamente178ticks en cada caso; captura8240
+  exacta, salida0,1280×720, revisada. Posición inicial de prueba y botas/armas
+  concedidas; sin cambios de posición, velocidad o salud después del inicio.
+  J2 termina con3HP en vez de4 por daño real; no se da la misión por completada.
+- El primer verificador esperaba5 después de la física. El original decrementa
+  ese temporizador una vez y ambos actores muestran4. Se conserva el informe
+  fallido y una auditoría del mismo cliente; el segundo cliente ya usa el criterio
+  correcto. No se cuentan como dos ejecuciones diferentes de la primera prueba.
+- Regresión48 agua→Hydro→tierra→impulso/planeo:6680exacto/salida0/3840×2160,
+  dos vistas1920×2160/MSAA4 revisadas. No es una prueba nueva de buceo sostenido.
+- Generación nueva con este EXE desde las dos ISO compatibles:290.6s/salida0,
+  1170referencias GLTF; hash/tamaño/mtime originales preservados, EXE de escritorio
+  y preferencias de idioma/fullscreen creados. GUI renderizada en los cinco
+  idiomas en escritorio aislado; diseño español revisado.
+- Cliente48 de esa instalación encuentra su carpeta Data adyacente, sin variables
+  que apunten a instalaciones de desarrollo. Nuevo cooperativo, tres vídeos
+  iniciales completos (740,1618,498imágenes decodificadas), cambio00→00 y vuelta
+  al juego con dos targets distintos640×720/MSAA4. Captura20000exacta/salida0,
+  revisada. En ese recorrido no se ejecutó la escena4; no se le atribuye esa prueba.
+- Dos clientes47 separados también reproducen completos los tres vídeos, en
+  individual Jak y cooperativo. El individual termina la escena4/842frames.
+  Son pruebas47, no se presentan como clientes48 ni como nuevos mandos físicos.
+- El nuevo lanzador elimina RC_MOVIE_SKIP y RC_SCENE forzados. Conserva la opción
+  normal de omitir vídeos con controles del juego; no certifica todas las escenas
+  de llegada ni las dos campañas.
+- Cinco rechazos de seguridad nuevos conservan el archivo testigo y evitan
+  ejecutar herramientas si el payload está alterado. Paquete por lista permitida,
+  licencias preservadas y ausencia de recursos comerciales/credenciales.
+
+Progreso global13/100. Mandos físicos: las confirmaciones Bluetooth/reconexión
+siguen siendo históricas. Poses de manos, compañeros y escapes necesitan pulido.
+Las pruebas acotadas no demuestran que una campaña completa llegue a créditos.
+
+
+## Histórico0.2.2-beta.1 — corrección de partida nueva / alpha47
 
 - Generador SHA-256: `b00da2777600ace06f0f200d84e21798cd4e7452495a82b4934408d86e639e22` (103053824 bytes).
 - Motor SHA-256: `d911b5f6597adb15eea65a35c6a67298a698efcacc4027c5927e1e7dfb0be531`.

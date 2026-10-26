@@ -1,5 +1,17 @@
 # Estado del desarrollo — 26 de octubre de 2026
 
+## 0.2.3-beta.1 — alpha48
+
+- Selector de raíles del Veldin final independiente por jugador; dos recorridos
+  originales simultáneos en sentidos opuestos verificados.
+- Eliminada la omisión automática de películas y la anulación de escenas de llegada
+  del lanzador. Tres vídeos iniciales completos y regreso al cooperativo comprobados
+  en una instalación recién generada desde ISO.
+- Regresión de agua a impulso/planeo48 en4K, cámaras simétricas;844núcleo y170motor.
+- Nuevo generador, cinco idiomas, cinco rechazos de seguridad y capturas reales48.
+- Global13/100; ambas campañas y el pulido visual completo siguen pendientes.
+
+
 ## Release 0.2.2 / alpha47
 
 La descarga pública pasa a alpha47. Reproduce y corrige el error de validación

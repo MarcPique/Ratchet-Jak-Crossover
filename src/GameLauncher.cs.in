@@ -21,7 +21,6 @@ internal static class GameLauncher {
    start.EnvironmentVariables["RC_RESOLUTION"]="window";start.EnvironmentVariables["RC_RENDER_SCALE"]="100";
    start.EnvironmentVariables["RC_FRONTEND"]="1";start.EnvironmentVariables["RC_FULLSCREEN"]="1";
    start.EnvironmentVariables["RC_ASPECT"]="monitor";start.EnvironmentVariables["RC_LEVEL"]="0";
-   start.EnvironmentVariables["RC_SCENE"]="0";start.EnvironmentVariables["RC_MOVIE_SKIP"]="30";
    if(test){start.Arguments="--version-json";start.RedirectStandardOutput=true;start.RedirectStandardError=true;}
    using(var proc=Process.Start(start)){
     if(test){string value=proc.StandardOutput.ReadToEnd();string error=proc.StandardError.ReadToEnd();proc.WaitForExit();if(proc.ExitCode!=0||value.IndexOf("RatchetJakCrossover",StringComparison.Ordinal)<0)throw new IOException("Comprobación fallida: "+error);File.WriteAllText(Path.Combine(profile,"launcher-check.json"),value,new UTF8Encoding(false));return 0;}
