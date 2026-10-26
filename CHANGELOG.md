@@ -1,5 +1,13 @@
 # Cambios
 
+## Desarrollo interno — 26 de octubre de 2026 (sin nueva release)
+
+- Captura real de selección multijugador publicada y enlazada desde el README.
+- Documentadas las pruebas de cornisas de alpha31 y paredes/techos magnéticos de alpha32.
+- Documentados los límites y la verificación pendiente de arma y cámara al abandonar superficies magnéticas.
+- La descarga pública conserva 0.2.1-beta.1 / alpha27; las mejoras internas no se anuncian como incluidas.
+- Progreso global conservado en 13/100.
+
 ## 0.2.1-beta.1 — 25 de octubre de 2026
 
 - START muestra una sola línea centrada, según el dispositivo activo, familia de botones y asignación de Start.

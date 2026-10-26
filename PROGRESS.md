@@ -2,7 +2,7 @@
 
 ![Progreso del proyecto](assets/progreso.svg)
 
-Actualizado el **25 de octubre de 2026**. La barra mide el alcance completo del
+Actualizado el **26 de octubre de 2026**. La barra mide el alcance completo del
 proyecto, no el tiempo de una instalación ni el número de pruebas automáticas.
 Los puntos tienen pesos diferentes: una mejora compilada o una prueba parcial
 no concede todos los puntos del hito. Por eso la distribución del generador y
@@ -26,6 +26,13 @@ campaña de Ratchet con Jak/Daxter.
   créditos, viajes entre ambas campañas y pulido final de animaciones.
 - Las capturas y pruebas de la distribución actual se detallan en
   [VERIFICATION.md](VERIFICATION.md). No se extrapolan a una campaña completa.
+
+## Trabajo posterior a la beta pública
+
+Las pruebas internas de cornisas y superficies magnéticas se detallan en
+[DEVELOPMENT.md](DEVELOPMENT.md). No se suman puntos completos por escenarios
+parciales: faltan retorno al suelo, regresiones, guardado/carga y recorridos de
+campaña. El generador descargable continúa fijado a alpha27.
 
 ## Puntos por área
 

@@ -14,6 +14,15 @@ V19 alpha27. No es un juego terminado ni contiene las dos campañas completas.**
 progreso verificado del proyecto; el avance de la instalación aparece por separado
 en el generador. Ambas campañas completas siguen pendientes.
 
+## Avances de desarrollo — 26 de octubre de 2026
+
+Las pruebas internas más recientes cubren agarres y subida de cornisas, además
+de paredes y techos magnéticos en Orxon con Jak. La recuperación del arma y la
+cámara al volver al suelo sigue en verificación. Estos cambios todavía no están
+en el generador público 0.2.1 / alpha27. Consulta el [estado detallado](DEVELOPMENT.md).
+
+[Ver la captura real de selección de personajes](assets/seleccion-personajes.png).
+
 ## Descargar
 
 **[Descargar el generador EXE para Windows x64](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/download/v0.2.1-beta.1/RatchetJak-Generador-Beta-0.2.1.exe)**
