@@ -3,7 +3,7 @@
 # Ratchet&Jak — beta experimental
 
 Un crossover no oficial para PC, en desarrollo. **Esta descarga genera la beta
-V19 alpha27. No es un juego terminado ni contiene las dos campañas completas.**
+V19 alpha47. No es un juego terminado ni contiene las dos campañas completas.**
 
 ## Progreso del proyecto
 
@@ -14,27 +14,31 @@ V19 alpha27. No es un juego terminado ni contiene las dos campañas completas.**
 progreso verificado del proyecto; el avance de la instalación aparece por separado
 en el generador. Ambas campañas completas siguen pendientes.
 
-## Avances de desarrollo — 26 de octubre de 2026
+## Nueva descarga — 0.2.2 / alpha47
 
-Las builds internas hasta **alpha42** verifican la recuperación del arma con R2
-tras cargar a Jak, raíles de Oltanis, cables de Kerwan y un tramo con saltos de
-Kalebo. Se ha corregido una muerte prematura de J2 en ese tramo y repetido pruebas
-de Swingshot, agua/planeo y retorno magnético. Son escenarios concretos; la
-campaña completa sigue pendiente. Estos cambios todavía no están en el generador
-público 0.2.1 / alpha27. Consulta el [estado detallado](DEVELOPMENT.md).
+Corrige el cierre del renderer al cambiar de nivel después de las cinemáticas
+de una partida nueva. La descarga incorpora también las adaptaciones de
+cornisas, botas magnéticas, raíles/cables, recuperación del arma tras cargar
+y reglas de altura de muerte por jugador desarrolladas hasta alpha46.
+Las pruebas cubren escenarios concretos; la campaña completa sigue pendiente.
+Consulta el [detalle de verificación](VERIFICATION.md).
 
-![Selección de personajes — captura nueva de la build interna alpha42](assets/seleccion-personajes-alpha42.png)
+![Cooperativo después de iniciar una partida nueva, alpha47](assets/cooperativo-alpha47.png)
 
-Captura real nueva de **alpha42**, en segundo plano a 3840×2160. Muestra los dos
-paneles de selección con pareja, aspecto y dispositivo. Las entradas fueron
-programadas; J2 aparece sin dispositivo asignado. No demuestra una prueba con
-dos mandos físicos ni una nueva versión del generador.
+Captura real nueva de alpha47 en segundo plano, 1280×720: dos vistas verticales
+independientes de 640×720 después de los vídeos iniciales y del cambio de nivel.
+Se usaron entradas programadas; no certifica dos mandos físicos ni toda la campaña.
+
+![Selección de personajes de la build alpha42](assets/seleccion-personajes-alpha42.png)
+
+La captura de selección conservada corresponde a alpha42, 3840×2160. No es
+una captura nueva de alpha47. Pareja, aspecto y dispositivo se eligen por jugador.
 
 ## Descargar
 
-**[Descargar el generador EXE para Windows x64](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/download/v0.2.1-beta.1/RatchetJak-Generador-Beta-0.2.1.exe)**
+**[Descargar el generador EXE para Windows x64](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/download/v0.2.2-beta.1/RatchetJak-Generador-Beta-0.2.2.exe)**
 
-[Release, cambios y suma SHA-256](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/tag/v0.2.1-beta.1)
+[Release, cambios y suma SHA-256](https://github.com/MarcPique/Ratchet-Jak-Crossover/releases/tag/v0.2.2-beta.1)
 
 El generador incluye el motor probado y las herramientas de conversión. No hace
 falta instalar Rust, Python, OpenGOAL ni un SDK de desarrollo. Los datos comerciales
@@ -43,7 +47,7 @@ ni se incluyen ISO, modelos, texturas, música o partidas comerciales en el paqu
 
 ## Cómo generar la beta
 
-1. Descarga y abre `RatchetJak-Generador-Beta-0.2.1.exe` en Windows x64 con .NET
+1. Descarga y abre `RatchetJak-Generador-Beta-0.2.2.exe` en Windows x64 con .NET
    Framework 4.8. La aplicación utiliza tu usuario normal.
 2. Elige el idioma: **español, inglés, francés, alemán o italiano**. Los menús del
    juego se preconfiguran con esa elección y luego pueden cambiarse en Opciones.
@@ -61,9 +65,9 @@ El juego arranca en **fullscreen sin bordes**, con la **resolución física del
 monitor** y escala interna del 100%. La instalación inicial conserva el idioma
 elegido; el lanzador no lo fuerza después de cambiarlo en Opciones.
 
-![Diseño del generador con cinco idiomas, captura 0.2.0](assets/instalador.png)
+![Generador 0.2.2 con logo del proyecto y cinco idiomas](assets/instalador-0.2.2.png)
 
-La imagen del instalador corresponde a 0.2.0; 0.2.1 mantiene el diseño y los cinco idiomas.
+Captura real del generador 0.2.2, realizada en un escritorio aislado sin interrumpir otras aplicaciones.
 
 Si ya existe un EXE con ese nombre, se crea otro con un número, sin sustituirlo.
 El generador tampoco actualiza ni borra instalaciones o partidas existentes.
@@ -160,7 +164,7 @@ El generador conserva `generated_not_gameplay_verified` en su manifest: generar
 archivos correctamente no demuestra que una campaña pueda completarse.
 
 El código del generador está en `src/`. El motor de esta release está fijado al
-SHA-256 `8ca7e846bbeb0edaaddba651396b331fe031d6f329c7673b99b7778ee32ee52d`.
+SHA-256 `d911b5f6597adb15eea65a35c6a67298a698efcacc4027c5927e1e7dfb0be531`.
 No se publica el árbol privado con recursos extraídos o fuentes de juego descompiladas.
 
 Basado en [ReRAC](https://github.com/re-rac/rerac), las modificaciones de

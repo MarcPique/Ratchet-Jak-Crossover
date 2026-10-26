@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 [assembly:AssemblyTitle("Ratchet&Jak — Generador experimental")]
-[assembly:AssemblyVersion("0.2.1.0")]
+[assembly:AssemblyVersion("0.2.2.0")]
 public sealed class Request {
  public string RatchetIso="",JakIso="",Destination="",DesktopDirectory="",Language="";
 }
@@ -118,7 +118,7 @@ internal sealed class GeneratorForm:Form {
   for(int i=0;i<Lang.Codes.Length;i++){string code=Lang.Codes[i];var choice=new RadioButton{Left=i*133,Top=1,Width=130,Height=29,Text=Lang.Names[i],Checked=Lang.Code==code};choice.CheckedChanged+=(sender,e)=>{if(choice.Checked){Lang.Select(code);RefreshLanguage();}};language.Controls.Add(choice);}
   summary.SetBounds(34,220,860,60);summary.ForeColor=Color.FromArgb(246,186,84);Controls.Add(summary);
   AddRow("Ratchet & Clank · USA v1.00",ratchet,287,false);AddRow("Jak and Daxter · USA",jak,353,false);AddRow("Instalar en una carpeta nueva",destination,419,true);
-  try{var drive=DriveInfo.GetDrives().Where(d=>d.IsReady&&d.DriveType==DriveType.Fixed).OrderByDescending(d=>d.AvailableFreeSpace).First();destination.Text=Path.Combine(Directory.Exists(@"F:\")?@"F:\":drive.RootDirectory.FullName,"RatchetJak-Beta27");}catch{destination.Text=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"RatchetJak-Beta27");}
+  try{var drive=DriveInfo.GetDrives().Where(d=>d.IsReady&&d.DriveType==DriveType.Fixed).OrderByDescending(d=>d.AvailableFreeSpace).First();destination.Text=Path.Combine(Directory.Exists(@"F:\")?@"F:\":drive.RootDirectory.FullName,"RatchetJak-Beta47");}catch{destination.Text=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"RatchetJak-Beta47");}
   generate.SetBounds(34,490,350,46);generate.Tag="Generar beta y EXE del escritorio";generate.BackColor=Color.FromArgb(227,106,34);generate.ForeColor=Color.Black;generate.FlatStyle=FlatStyle.Flat;generate.Click+=async(s,e)=>await StartBuild();Controls.Add(generate);
   status.SetBounds(405,490,490,60);status.Tag="No incluye los juegos. Campañas completas aún pendientes.";Controls.Add(status);
   progress.SetBounds(34,555,860,7);progress.Style=ProgressBarStyle.Marquee;progress.Visible=false;Controls.Add(progress);
@@ -134,7 +134,7 @@ internal sealed class GeneratorForm:Form {
  void RefreshLanguage(){
   Text=Lang.T("Ratchet&Jak — Generador experimental");
   foreach(Control control in Controls)if(control.Tag is string)control.Text=Lang.T((string)control.Tag);
-  summary.Text=Lang.T("BETA EXPERIMENTAL")+" · V19 alpha27\n"+Lang.T("Elige tus dos ISO. Se creará una instalación nueva y un EXE con este icono en tu escritorio.");
+  summary.Text=Lang.T("BETA EXPERIMENTAL")+" · V19 alpha47\n"+Lang.T("Elige tus dos ISO. Se creará una instalación nueva y un EXE con este icono en tu escritorio.");
  }
  void Line(string value){if(IsDisposed)return;if(InvokeRequired){BeginInvoke((Action<string>)Line,value);return;}log.AppendText(value+Environment.NewLine);if(value.StartsWith("FASE:"))status.Text=value.Substring(5).Trim();}
  async Task StartBuild(){

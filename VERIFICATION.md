@@ -1,6 +1,53 @@
 # Verificación
 
-## Desarrollo interno alpha42 — sin nueva descarga
+## 0.2.2-beta.1 — corrección de partida nueva / alpha47
+
+- Generador SHA-256: `b00da2777600ace06f0f200d84e21798cd4e7452495a82b4934408d86e639e22` (103053824 bytes).
+- Motor SHA-256: `d911b5f6597adb15eea65a35c6a67298a698efcacc4027c5927e1e7dfb0be531`.
+- 170 pruebas del motor superadas, 3 ignoradas; ejecutable compilado.
+- Generación completa nueva desde las dos ISO compatibles: salida0,324.4s,
+  1170 referencias GLTF válidas, EXE de escritorio creado y comprobado.
+  Hash, tamaño y fecha de las ISO originales se conservaron.
+- Interfaz del generador renderizada y revisada en los cinco idiomas, en un
+  escritorio aislado. El setup español escribió language_slot4 y fullscreen.
+- Cinco rechazos de seguridad comprobados en este EXE: ruta relativa, misma ISO,
+  ISO inválida, destino ocupado (archivo testigo intacto) y payload alterado.
+- El fallo antiguo se reprodujo en alpha46: al sustituir el nivel tras la intro,
+  una pasada Bgra8UnormSrgb recibía un pipeline de efectos Rgba8Unorm y el renderer
+  terminaba. El proceso devolvía0 incluso con ese error; por eso no se usa exit0
+  como único criterio de éxito.
+- Alpha47, cooperativo: selección real mediante entradas internas programadas,
+  tres vídeos de intro omitidos después de35 frames cada uno, cambio00→00 y
+  vuelta a la jugabilidad con dos targets distintos640×720/MSAA4. Captura11000
+  exacta1280×720, salida0, sin error de validación, revisada visualmente.
+  No se afirma que se reprodujera la escena4 en ese recorrido cooperativo.
+- Alpha47 recién generado: partida nueva con Ratchet desde sus propios datos
+  extraídos, mismos vídeos omitidos, cambio00→00, escena4 completa842frames,
+  y jugabilidad después. Captura11000 exacta1280×720, salida0, revisada visualmente.
+- Jak individual también terminó la escena4 y volvió a jugar. En ese intento
+  frío la compilación de shaders retrasó la captura19628 frente a10000: salida3.
+  Se conserva como evidencia visual tardía, no como un pase de captura exacta.
+- Se conservan otros dos intentos adversos del script cooperativo: el primero
+  volvió al menú sin iniciar partida; el segundo tenía un rango inválido y salió101
+  antes de las pruebas gráficas. No cuentan como pruebas de jugabilidad superadas.
+- Auditoría por lista permitida y hashes:2384 archivos del payload; sin formatos
+  comerciales, credenciales ni código decompilado en el árbol público. Lint del
+  árbol público contra los datos de Ratchet y la instalación de Jak:0 fallos/0avisos.
+  La licencia ISC redistribuible se conserva; no es un recurso comercial del juego.
+
+Las pruebas nuevas son programadas y acotadas. Las confirmaciones físicas de
+DualSense Bluetooth y reconexión pertenecen a builds anteriores; no se anuncia
+una prueba física nueva ni compatibilidad universal. No se han completado las
+campañas. Progreso global13/100. Las capturas4K históricas se identifican por versión;
+las dos pruebas de transición exactas de esta release son720p.
+
+El manifest sigue indicando `generated_not_gameplay_verified`: el generador no
+certifica la jugabilidad de la instalación de cada usuario. La verificación nativa
+se realizó aparte en una instalación de prueba. Las ISO y los registros privados
+no se publican.
+
+
+## Histórico: desarrollo interno alpha42
 
 Motor interno SHA-256:
 `37e393ff51de3ddb44e4bb9731fb9ceb7e75f9d7b084906717a76bc6fba12f23`.
@@ -20,8 +67,8 @@ previamente desde las ISO y entradas internas programadas. La ventana permaneci�
 oculta desde el arranque y sin audio; no se capturaron otras aplicaciones.
 J2 sin dispositivo asignado es el estado real del ensayo.
 
-La beta descargable conserva alpha27 y los hashes siguientes. No se ha
-reemplazado el generador por la build interna. Véase [DEVELOPMENT.md](DEVELOPMENT.md)
+En esa publicación histórica, la beta descargable conservaba alpha27 y los hashes siguientes.
+La descarga actual es0.2.2/alpha47, descrita arriba. Véase [DEVELOPMENT.md](DEVELOPMENT.md)
 para los resultados positivos, fallos conservados y trabajo pendiente.
 
 ## 0.2.1-beta.1 — START contextual / alpha27

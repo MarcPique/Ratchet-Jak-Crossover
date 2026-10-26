@@ -1,5 +1,27 @@
 # Estado del desarrollo — 26 de octubre de 2026
 
+## Release 0.2.2 / alpha47
+
+La descarga pública pasa a alpha47. Reproduce y corrige el error de validación
+del renderer al iniciar partida nueva: una pasada de efectos podía conservar
+un pipeline Rgba8Unorm cuando la entidad principal ya no tenía su marcador de
+efecto. Ahora se decide la pasada a partir del pipeline realmente encolado;
+los render targets se preparan también durante la sustitución de nivel.
+No se desactiva la validación ni se elimina el renderizado de efectos.
+
+170 pruebas del motor pasan, con 3 ignoradas. El fallo anterior queda conservado;
+la comprobación nativa nueva atraviesa los tres vídeos de intro (omitidos tras
+35 frames por vídeo), cambia de nivel y devuelve la jugabilidad cooperativa con
+dos cámaras independientes. Jak individual termina además la escena 4 de 842
+frames. Un intento frío retrasó la captura hasta el frame19628 y salió con código3;
+se conserva como captura tardía, no como ensayo exacto. La comprobación de
+generación desde ISO es distinta de la jugabilidad y no demuestra una campaña.
+
+El siguiente objetivo sigue siendo completar la campaña de Ratchet con Jak.
+Manos, compañeros, escapes y transiciones de campaña necesitan más pruebas.
+El progreso global permanece en13/100.
+
+
 **Beta pública: 0.2.1-beta.1 / V19 alpha27. Build interna: alpha42.
 Progreso global: 13/100.**
 

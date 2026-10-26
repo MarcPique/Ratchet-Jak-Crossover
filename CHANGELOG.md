@@ -1,5 +1,15 @@
 # Cambios
 
+## 0.2.2-beta.1 — 26 de octubre de 2026
+
+- Motor alpha47: corrige la incompatibilidad entre attachments y pipeline de efectos al sustituir el nivel después de los vídeos iniciales.
+- Nueva generación completa desde las dos ISO compatibles, con EXE de escritorio, idioma español y motor fijado por hash. Interfaz verificada en los cinco idiomas.
+- Incluye el trabajo hasta alpha46 en cornisas, botas magnéticas, raíles, cables y restauración del arma al cargar. Las campañas completas siguen pendientes.
+- Capturas nuevas del generador y del cooperativo después de la transición inicial; las imágenes anteriores conservan su versión indicada.
+- Cinco rechazos de seguridad comprobados; los discos originales y el archivo testigo de una carpeta ocupada se conservan.
+- 13/100 global. Beta experimental; sin nueva certificación física de mandos.
+
+
 ## Desarrollo interno — 26 de octubre de 2026 (sin nueva release)
 
 - Captura nueva de selección multijugador de alpha42, en 4K y segundo plano; se conserva también la captura de la beta pública alpha27.
