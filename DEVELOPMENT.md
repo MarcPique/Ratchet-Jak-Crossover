@@ -40,7 +40,7 @@ de cámara al volver a la locomoción normal de Jak. Su prueba de núcleo conser
 37 balas y recupera el arma esperada. Falta verificar la secuencia completa en
 el cliente nativo: superficie magnética → suelo → cámara normal → apuntar y disparar.
 
-Un diagnóstico posterior manteniendo avance durante 5000 ticks no encontró un
+Un diagnóstico posterior de 5000 ticks, con avance programado, no encontró un
 retorno sano al suelo normal, tanto para Ratchet como para Jak. Se trata de una
 búsqueda de ruta, sin actualización completa de objetos del mundo; no demuestra
 un defecto exclusivo de Jak ni una salida del recorrido superada.
