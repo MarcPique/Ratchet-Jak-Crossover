@@ -2,10 +2,12 @@
 
 ## Desarrollo interno — 26 de octubre de 2026 (sin nueva release)
 
-- Captura real de selección multijugador publicada y enlazada desde el README.
+- Captura nueva de selección multijugador de alpha42, en 4K y segundo plano; se conserva también la captura de la beta pública alpha27.
 - Actualizados los resultados internos: cornisas, recorrido magnético y retorno al suelo con arma y cámara recuperadas, en individual y cooperativo (alpha35).
 - Documentados guardado/carga de Jak como J2 y confirmación de sobrescritura en cooperativo (alpha36).
-- Registrado el fallo pendiente de R2 tras cargar a Jak como personaje principal (alpha37); no se anuncia como corregido en una build jugable.
+- Actualizada la corrección de R2 tras cargar a Jak como personaje principal, comprobada en alpha38: cuatro disparos, 94→90 balas, sin conceder objetos al cargar.
+- Documentados raíles de Oltanis, cables de Kerwan y el tramo de saltos de Kalebo en alpha39–42; los intentos fallidos se conservan y no se da la misión completa por terminada.
+- Documentada la corrección de altura de muerte por jugador en Kalebo y las regresiones de Swingshot, agua/planeo y retorno magnético en alpha42.
 - La descarga pública conserva 0.2.1-beta.1 / alpha27; las mejoras internas no se anuncian como incluidas.
 - Progreso global conservado en 13/100.
 

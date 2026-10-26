@@ -1,5 +1,29 @@
 # Verificación
 
+## Desarrollo interno alpha42 — sin nueva descarga
+
+Motor interno SHA-256:
+`37e393ff51de3ddb44e4bb9731fb9ceb7e75f9d7b084906717a76bc6fba12f23`.
+
+840 pruebas del núcleo superadas / 1 ignorada; 169 del motor / 3 ignoradas;
+ejecutable compilado. Cuatro clientes gráficos alpha42 completados con capturas
+4K exactas y salida correcta: tramo de Kalebo cooperativo (frame 9200),
+Swingshot (6220), agua/planeo (6680) y retorno magnético (9600). Son pruebas
+programadas acotadas, sin comprobación física nueva ni campaña completada.
+La prueba de agua/planeo no se presenta como un ensayo independiente de buceo
+sostenido. El pulido visual de manos, compañeros y escapes sigue pendiente.
+
+La selección publicada en `assets/seleccion-personajes-alpha42.png` es una
+captura nueva del cliente con ese hash, frame 4600 exacto, salida 0 y dimensiones
+3840×2160, revisada visualmente. Se utilizó un perfil separado, datos generados
+previamente desde las ISO y entradas internas programadas. La ventana permaneció
+oculta desde el arranque y sin audio; no se capturaron otras aplicaciones.
+J2 sin dispositivo asignado es el estado real del ensayo.
+
+La beta descargable conserva alpha27 y los hashes siguientes. No se ha
+reemplazado el generador por la build interna. Véase [DEVELOPMENT.md](DEVELOPMENT.md)
+para los resultados positivos, fallos conservados y trabajo pendiente.
+
 ## 0.2.1-beta.1 — START contextual / alpha27
 
 La pantalla START muestra **una sola línea**. La familia de botones efectiva,

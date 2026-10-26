@@ -16,14 +16,19 @@ en el generador. Ambas campañas completas siguen pendientes.
 
 ## Avances de desarrollo — 26 de octubre de 2026
 
-Las pruebas internas verifican cornisas, el recorrido magnético de Orxon y la
-recuperación del arma y la cámara al volver al suelo, en individual y cooperativo.
-También se ha comprobado guardar y cargar a Jak como J2 en una zona magnética.
-Sigue pendiente corregir y verificar la recuperación del arma con R2 al cargar
-a Jak como personaje principal. Estos cambios todavía no están en el generador
+Las builds internas hasta **alpha42** verifican la recuperación del arma con R2
+tras cargar a Jak, raíles de Oltanis, cables de Kerwan y un tramo con saltos de
+Kalebo. Se ha corregido una muerte prematura de J2 en ese tramo y repetido pruebas
+de Swingshot, agua/planeo y retorno magnético. Son escenarios concretos; la
+campaña completa sigue pendiente. Estos cambios todavía no están en el generador
 público 0.2.1 / alpha27. Consulta el [estado detallado](DEVELOPMENT.md).
 
-[Ver la captura real de selección de personajes](assets/seleccion-personajes.png).
+![Selección de personajes — captura nueva de la build interna alpha42](assets/seleccion-personajes-alpha42.png)
+
+Captura real nueva de **alpha42**, en segundo plano a 3840×2160. Muestra los dos
+paneles de selección con pareja, aspecto y dispositivo. Las entradas fueron
+programadas; J2 aparece sin dispositivo asignado. No demuestra una prueba con
+dos mandos físicos ni una nueva versión del generador.
 
 ## Descargar
 

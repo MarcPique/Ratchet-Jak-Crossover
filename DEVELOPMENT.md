@@ -1,6 +1,7 @@
 # Estado del desarrollo — 26 de octubre de 2026
 
-**Beta pública: 0.2.1-beta.1 / V19 alpha27. Progreso global: 13/100.**
+**Beta pública: 0.2.1-beta.1 / V19 alpha27. Build interna: alpha42.
+Progreso global: 13/100.**
 
 La prioridad es terminar la campaña de Ratchet con Jak/Daxter. Los ensayos
 siguientes pertenecen a builds internas posteriores y todavía no están incluidos
@@ -8,12 +9,14 @@ en el generador descargable. No hay una nueva release en esta actualización.
 
 ## Selección de personajes
 
-![Selección multijugador en la beta pública](assets/seleccion-personajes.png)
+![Selección multijugador — build interna alpha42](assets/seleccion-personajes-alpha42.png)
 
-Captura real de alpha27, 3840×2160, frame 4600 exacto y salida correcta. Muestra
+Captura nueva de alpha42, 3840×2160, frame 4600 exacto y salida correcta. Muestra
 dos paneles con pareja, aspecto, dispositivo y vista 3D. El segundo dispositivo
-figura sin asignar: las entradas de esta captura fueron programadas. Se conserva
-la imagen ya publicada; no se presenta como una nueva prueba física.
+figura sin asignar: las entradas de esta captura fueron programadas. La ventana
+permaneció oculta y sin audio, sin tomar el foco ni enviar teclas al sistema.
+La captura de la [beta pública alpha27](assets/seleccion-personajes.png) se conserva
+por separado. No es una nueva prueba física de dos mandos.
 
 ## Avances comprobados y límites
 
@@ -25,8 +28,12 @@ la imagen ya publicada; no se presenta como una nueva prueba física.
 | Regresiones, alpha35 | Agua→Hydro→impulso/planeo, Swingshot y cornisa comprobados en clientes nativos con capturas 4K revisadas | Repertorio completo de acciones y niveles |
 | Guardado/carga de Jak como J2, alpha36 | Guarda mientras el arma está temporalmente recogida en la superficie magnética; otro proceso carga sin conceder objetos y dispara seis veces: 94→88 balas | Otros checkpoints y combinaciones de personajes |
 | Confirmación de guardado, alpha36 | Corregido círculo=Sí en la confirmación original de sobrescritura; clic derecho cancela. Pausar desde J2 congela a ambos mientras J1 guarda | Comprobación física con dos mandos |
-| Carga de Jak como personaje principal, alpha37 | La comparación reproduce un fallo: Ratchet recupera el arma al disparar; Jak permanece con la llave al pulsar R2 | Verificar la corrección en una nueva compilación y cliente nativo |
-| Raíles y campaña completa | Pendientes | Adaptar raíles y recorrer la campaña hasta créditos con Jak |
+| Carga de Jak como personaje principal, alpha38 | Corregido el fallo de R2 de alpha37: carga sin conceder objetos, recupera el arma y dispara cuatro veces, 94→90 balas | Más contextos de guardado y carga |
+| Raíles de Oltanis, alpha40 | J2 monta, salta y cambia del raíl 2 al 3; 8420 frames exactos, 4 HP y cámara propia | Recorridos completos y progresión normal |
+| Cables de Kerwan, alpha39 | Cliente nativo: enganche, deslizamiento a 14 unidades/s, salida al suelo y recuperación del arma; comparación de física con los tres cables para ambos personajes | Recorrer todas las rutas durante la campaña |
+| Saltos de Kalebo, alpha41/42 | Tramo de 1200 ticks: Ratchet y Jak individual superan obstáculos con 3 HP; Jak en J2 completa el tramo con 4 HP tras corregir su altura de muerte | Misión completa, salidas y guardado durante el recorrido |
+| Transiciones de raíles, alpha41/42 | El adaptador cede a Swingshot, cornisa y magnetismo; pruebas de código y regresiones nativas | Más transiciones reales encadenadas |
+| Regresiones alpha42 | Swingshot/soltar, agua→Hydro→impulso/planeo y retorno magnético; capturas 4K exactas revisadas | Repertorio completo de acciones y niveles |
 
 En cooperativo, las pruebas aceptadas conservan dos imágenes distintas de
 1920×2160 con MSAA 4 dentro de una captura de 3840×2160. Son comprobaciones
@@ -57,14 +64,38 @@ no se cuenta como aprobado. La comprobación positiva procede de otro cliente.
 La comparación posterior de alpha37 revela un caso distinto en individual:
 Ratchet recupera el Blaster y dispara tras cargar, pero Jak no lo recupera con
 R2. Esto demuestra un problema de selección/disparo; no demuestra que la munición
-se haya borrado. La adaptación de R2 supera 835 pruebas del núcleo, pero todavía
-requiere compilar y probar el ejecutable nativo antes de declararla corregida.
+se haya borrado. Alpha38 corrige la selección mediante R2 y lo comprueba en un
+nuevo proceso nativo: carga sin conceder objetos, recupera el arma y dispara
+cuatro veces, 94→90 balas. Las restricciones magnéticas se conservan.
+
+## Kalebo: corrección por jugador
+
+La ruta inicial sin saltos fallaba también con Ratchet. Una ruta posterior con
+saltos supera el tramo en individual, pero alpha41 todavía hacía morir a J2
+prematuramente: heredaba el límite de caída de J1, 115, cuando su propio contexto
+de raíl necesitaba 100. Alpha42 conserva la regla original por actor. La traza
+nativa confirma 100 para J2 y 115 para J1; J2 supera el tramo con vida y ambos
+conservan su munición. Son unidades internas del juego, no metros medidos.
+
+Los intentos fallidos se conservan. Los tres ensayos positivos de Kalebo
+corresponden a alpha41 en individual y alpha42 en cooperativo; no son tres
+ejecuciones nuevas de alpha42. Son escenarios con colocación inicial de prueba
+y entradas programadas, sin completar la misión ni recorrer la campaña.
+
+## Compilación y pruebas
+
+Alpha42 supera 840 pruebas del núcleo (1 ignorada), 169 del motor (3 ignoradas)
+y compila el ejecutable. Las comparaciones con los datos originales de raíles y
+cables pasan; la comparación magnética repetida con su ruta de salida
+configurada también pasa. Cuatro clientes nativos alpha42 verifican Kalebo
+cooperativo, Swingshot, agua/planeo y retorno magnético. Las pruebas de código,
+comparaciones de física y ensayos gráficos se registran por separado.
 
 ## Próximos hitos
 
-1. Verificar la recuperación del arma con R2 al cargar a Jak como personaje principal.
-2. Comprobar que la adaptación mantiene las restricciones magnéticas y el disparo propio de J2.
-3. Adaptar y probar raíles/cables frente al comportamiento original.
+1. Adaptar la regla de caída de Fleet por jugador; la corrección de Kalebo no cubre todos los niveles.
+2. Comprobar salidas de raíles, guardado/carga y transiciones encadenadas.
+3. Ampliar las pruebas de gadgets y recorridos legítimos de campaña.
 4. Recorrer la campaña de Ratchet con Jak hasta créditos antes de darla por completada.
 
 Las poses, manos, anclajes de compañeros y escapes siguen siendo experimentales.
